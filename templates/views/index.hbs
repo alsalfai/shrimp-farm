@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="/img/shrimp-icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Home</title>
+</head>
+<html>
+<body>
+    {{>header}}
+
+    <div class="container">
+        <p>Create a new shrimp farm here!</p>
+        <form id="new-farm">
+            <input type="text" placeholder="Name">
+            <button>Submit</button>
+        </form>
+
+        <table id="farm-table">
+            <tr>
+                <th>Name</th>
+                <th>Hectares</th>
+                <th>Ponds #</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>    
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

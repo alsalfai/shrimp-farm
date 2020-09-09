@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="/img/shrimp-icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Edit Pond</title>
+</head>
+<html>
+<body>
+    {{>header}}
+
+    <div class="container">
+        <h4>Update Pond</h4>
+        <form id="edit-pond">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value='{{name}}'>
+            <label for="size">Size:</label>
+            <input type="text" name="size" value='{{size}}'>
+            <button>Update</button>
+        </form>
+        <br>
+        <a href="/farms/edit/{{farmId}}">Back to farm details</a>
+    </div>
+
+    <script src="/js/edit-pond.js"></script>
+</body>
+</html>
